@@ -1,0 +1,18 @@
+.landing {
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons span {
+    margin: 10px;
+}
+
+.jobTitle {
+    margin-top: 20px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #F9F9F9;
+    font-size: 36px;
+}

@@ -1,0 +1,30 @@
+.post {
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    color: #F9F9F9;
+    font-family: 'Inter var', sans-serif;
+}
+
+.cover {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.date {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.title {
+    font-size: 48px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content {
+    padding-top: 10px;
+    align-items: flex-start;
+    text-align: justify;
+    text-justify: inter-word;
+}

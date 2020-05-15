@@ -1,0 +1,34 @@
+header {
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-bottom: 1px solid #EBD67A;
+}
+
+.title {
+    color: #F9F9F9;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.title a:any-link {
+    color: #F9F9F9;
+}
+
+.menu {
+    padding: 10px;
+    font-size: 25px;
+    color: #BEBEBE;
+}
+
+.menu a:any-link {
+    color: #BEBEBE;
+}
