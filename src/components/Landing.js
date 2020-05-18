@@ -9,11 +9,11 @@ const Landing = () => {
     return (
         <div className={style.landing}>
             <div className={style.icons}>
-                <a href="https://www.linkedin.com/in/c%C3%A9dric-merouani-symfony-react/" target="_blank"><span><LinkedInIcon /></span></a>
-                <span><GithubIcon /></span>
-                <span><TwitterIcon /></span>
+                <a href="https://www.linkedin.com/in/c%C3%A9dric-merouani-symfony-react/" target="_blank" rel="noopener noreferrer"><span><LinkedInIcon /></span></a>
+                <a href="https://github.com/Linkinou" target="_blank" rel="noopener noreferrer"><span><GithubIcon /></span></a>
+                <a href="https://twitter.com/CedricMerouani" target="_blank" rel="noopener noreferrer"><span><TwitterIcon /></span></a>
             </div>
-            <div className={style.jobTitle}>Développeur Web</div>
+            <div className={style.jobTitle}>Web Developer</div>
         </div>
     )
 }

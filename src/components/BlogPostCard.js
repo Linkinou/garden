@@ -3,6 +3,7 @@ import style from "./BlogPostCard.module.css"
 import { Link } from "gatsby"
 
 const BlogPostCard = ({img, title, date, intro, slug}) => {
+
     return (
         <div className={style.card}>
             <img src={img} alt={title} />
