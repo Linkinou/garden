@@ -6,6 +6,8 @@ import Footer from "../components/footer"
 import style from "../components/Layout.module.css"
 
 const Layout = ({children, position}) => {
+    console.log(typeof(position))
+    console.log(typeof(children))
     return (
         <div className={style.layout}>
             <Helmet>

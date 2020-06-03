@@ -7,12 +7,14 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-      {
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
         resolve: "gatsby-plugin-react-svg",
         options: {
-          rule: {
-            include: /assets/
-          }
+            rule: {
+                include: /assets/
+            }
         }
     },
     'gatsby-plugin-sass',
@@ -24,22 +26,7 @@ module.exports = {
             path: `${__dirname}/src/blog/`
         }
     },
-    'gatsby-plugin-sharp',
-    {
-        resolve: 'gatsby-transformer-remark',
-        options: {
-            plugins: [
-                'gatsby-remark-relative-images',
-                {
-                    resolve: 'gatsby-remark-images',
-                    options: {
-                        maxWidth: 1920,
-                        linkImagesToOriginal: false
-                    }
-                }
-            ]
-        }
-    }
+    'gatsby-transformer-remark'
   ],
   siteMetadata: {
       title: 'Cédric Merouani',

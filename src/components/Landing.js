@@ -6,6 +6,8 @@ import TwitterIcon from "../../assets/twitter-icon.svg"
 import style from "./Landing.module.css"
 
 const Landing = () => {
+    console.log(style)
+
     return (
         <div className={style.landing}>
             <div className={style.icons}>
