@@ -15,7 +15,13 @@ const BlogList = () => {
                             title
                             date
                             intro
-                            img
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
                         }
                         html,
                         excerpt
@@ -32,7 +38,7 @@ const BlogList = () => {
         <section className={style.list}>
             {data.allMarkdownRemark.edges.map(edge =>
                 <BlogPostCard
-                    img={edge.node.frontmatter.img}
+                    img={edge.node.frontmatter.image.childImageSharp.fluid}
                     title={edge.node.frontmatter.title}
                     date={edge.node.frontmatter.date}
                     intro={edge.node.frontmatter.intro}

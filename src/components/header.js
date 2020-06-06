@@ -18,8 +18,8 @@ const Header = () => {
       <div className={headerStyles.links}>
         <div className={headerStyles.title}><Link to="/">{data.site.siteMetadata.title}</Link></div>
         <nav className={headerStyles.menu}>
-            <a href="http://cedric-merouani.info" target="_blank">CV</a>
-            <a href="http://portfolio.merouani.net" target="_blank">Portfolio</a>
+            <a href="http://cedric-merouani.info" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="http://portfolio.merouani.net" target="_blank" rel="noopener noreferrer">Portfolio</a>
             <Link to="/blog">Garden</Link>
         </nav>
       </div>

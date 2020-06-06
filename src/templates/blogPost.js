@@ -6,21 +6,20 @@ import Layout from "../components/Layout"
 import style from "./blogPost.module.css"
 
 export const query = graphql`
-    query($slug: String!, $img: String!) {
+    query($slug: String!) {
       markdownRemark(fields: {slug: {eq: $slug}}) {
         frontmatter {
           title
-          img
           date
-        }
-        html
-      }
-      file(relativePath : {eq: $img}) {
-          childImageSharp {
-              fluid {
-                  ...GatsbyImageSharpFluid
+          image {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid
+                  }
               }
           }
+        }
+        html
       }
     }
 `
@@ -29,7 +28,7 @@ const BlogPost = ({data}) => {
     return (
         <Layout>
             <main className={style.post}>
-                <Img className={style.cover} fluid={data.file.childImageSharp.fluid} alt={data.markdownRemark.frontmatter.title}/>
+                <Img className={style.cover} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid} alt={data.markdownRemark.frontmatter.title}/>
                 <h1 className={style.title}>{data.markdownRemark.frontmatter.title}</h1>
                 <span className={style.date}>{data.markdownRemark.frontmatter.date}</span>
                 <div className={style.content}>

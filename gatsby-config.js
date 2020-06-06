@@ -10,6 +10,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    {
         resolve: "gatsby-plugin-react-svg",
         options: {
             rule: {
@@ -25,8 +38,7 @@ module.exports = {
             name: 'src',
             path: `${__dirname}/src/blog/`
         }
-    },
-    'gatsby-transformer-remark'
+    }
   ],
   siteMetadata: {
       title: 'Cédric Merouani',
