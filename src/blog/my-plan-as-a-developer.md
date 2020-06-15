@@ -7,13 +7,11 @@ image: "why.jpg"
 
 
 It took me 5 years working as a developer to understand that I don't know much about programming than I should.
-
 I had this feeling about my life in general, the feeling that what I knew wasn't enough.
 
 I remember as well what happened just after; time started to speed up, anxiety started to kick in and this urgent need of grasping every bit of knowledge like it was my last day on earth.
 
 Time has come to change and I wanted to make this garden a tool to help me through this process.
-
 And the idea is very simple: **turn weaknesses into strenght**.
 
 Here's my protocol:
@@ -27,7 +25,6 @@ Step three is where the magic happens for me.
 I was never good at history class and that particular step was the missing step.
 
 I've never been able to retain information without struggling about it. Tell me something, I will forget it no long after.
-
 My brain is a minimalist; *"No use ? No need !"*.
 
 It's important to me to **feel the friction** in my brain, it means I'm allocating space to keep that precious information.
